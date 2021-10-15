@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        nav{
+            background-color:yellowgreen;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+            /* border-top:1px solid black; */
+        }
+        li{
+            /* padding : 20px; */
+            margin-left: 10px;
+            font-size: 20px;
+            padding-top: 0px;
+        }
+        #navDiv{
+            height:50px;
+            display: flex;
+            justify-content:space-around;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+        .img{
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+        }
+        #logo{
+            height: 40px;
+            width: 40px;
+            /* border-radius: 20px; */
+        }
+        #search{
+            width: 400px;
+            height: 40px;
+            border-radius: 50px;
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        nav{
+            border: 1px solid black;
+        }
+        #btn{
+            height: 40px;
+            width: 80px;
+            font-size:14px;
+            margin-top:5px;
+            border-radius:20px
+        }
+        
+    </style>
+</head>
+<nav id="nav">
+    <div id="navDiv">
+        <div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAMFBMVEX///8AAAAwMDDx8fE3NzeOjo4sLCwQEBD29vaFhYULCwsaGho6OjofHx+WlpZJSUlcNdZGAAABFElEQVR4nO3c2Q3CMBBF0eCE7Ev/3VICyJaYgZzbwPP5HsldJ0mSJEmSJEmS9Kf1U2lp6qMBb+sfbRHGR0hIGB8hIWF8hISE8RESEsZHSEgYHyEhYXyEhITxERISxkdISBgfISFhfISEhPHNy7OlZY4GSJIkSZIkSZL0k60Vd4etcXOr2Fyr10rF2tAoHCo2CyEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISHhbYV7o3BPLzzOpj8VziO9MCJCwvwREuaPkDB/hIT5IyTMHyFh/ggJ80dImD9CwvwREuaPkDB/hIT5IyTMHyFh/gjvLByjn/5hY7XwGssvNF7VQkmSJEmSJEmSpC/2AvViRWsS6bj5AAAAAElFTkSuQmCC" id="logo">
+        </div>
+        <div>
+            <input type="text" placeholder="Search photos" id="search" value="technology">
+        </div>
+        <div>
+            <button id="btn">Search</button>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1634080672232-80a50a08be06?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1296&q=60" class="img">
+        </div>
+    </div>
+    <div id="nav2">
+
+    </div>
+
+    </div>
+</nav>
+<body>
+    
+
+</body>
+
+<script  type="module">
+    import {navBar,display} from "./navBar.js";
+    const nav2 = document.querySelector("#nav2");
+    nav2.innerHTML =(navBar());
+    display();
+    // console.log(`${search}`);
+</script>
+
+
+</html>
